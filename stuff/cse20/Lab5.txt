@@ -1,0 +1,14 @@
+Lab 5 
+Casting.
+
+Greater than: >
+Less than: <
+Equal: ==
+Not equal: !=
+Greater than or equal to: >=
+Less than or equal to <=
+AND: &&
+OR: ||
+
+Boolean Arguments:
+	They are like true and false and are useful for conditional arguments.

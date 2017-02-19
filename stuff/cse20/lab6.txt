@@ -1,0 +1,22 @@
+Lab 6
+
+If and If Else
+
+An If statment creates an argument in which a condition must be met before an exacution is done.
+Example:
+	if (a < b){
+		System.out.print("Hugh Mungus");
+	}
+		-If a is less than b, then it will print out the statment "Hugh Mungus".
+An If else is used after an if statment, creating another arugment after the failure or sucess of the previous If statment
+Example:
+	int a = 4;
+	int b = 3;
+
+	if (a < b){
+		System.out.print("Hugh Mungus");
+	}
+	if else (b < a){
+		System.out.print("Slagathor");
+	}
+		- A is more than b so the first if statment fails but the if else returns true so it prints the the string "Slagathor".

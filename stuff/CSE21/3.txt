@@ -1,0 +1,13 @@
+AND and OR
+
+When &&(AND) is placed in an arguments in which a two condition needs to be compared to one another. In which case they both have to return true.
+	Example:
+		if (a < b && b > c){
+		System.out.print("Riga mortis");
+	A must by less than b and b must be less than c in order for this to exicute.
+	If one returns trues but the other returns false, it will than be come a false.
+When OR (||) is places in an argument with two conditions, one or the other returns true for the statment to return true.
+	Example:
+		if (a < b || b > c){
+		System.out.print("Riga mortis");
+		If either one returns true then it prints, if both returns false than it does not print. 

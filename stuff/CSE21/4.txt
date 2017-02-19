@@ -1,0 +1,4 @@
+Overloading
+
+Overloading happens when variables are put into arrays or intergers when there is no room to be found.
+I cannot try to in put 100 different varaibles into an array set to 20. 

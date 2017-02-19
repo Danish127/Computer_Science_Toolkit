@@ -1,0 +1,8 @@
+Pointers:
+
+A pointer is a variable which contains the address in memory of another variable. 
+We can have a pointer to any variable type.
+
+However pointers are one of the most difficult and widely confusing parts of C because of their nature.
+The idea of a pointer to a pointer stops a lot of people in their track.
+But remember that pointers are almost regular referring and being used in terms of an Array.

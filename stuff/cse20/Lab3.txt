@@ -1,0 +1,16 @@
+Lab 3 
+
+Input/Output Fundamentals:
+
+Input is any information that is needed by your program to complete ts execution.
+Output is any information that the program must convey to the user.
+
+Pay close attention to the arrangement of an user input, if a varible is called that required an user input, it will return an error or not run at all. 
+One can not execute a argument if all its variable are undetermined and does not exist.
+
+When it comes to outputs, know what you want. Make sure appropriate parameters are assigned before exicuting program or you will run into a logical error in which the code works but not to the sepcificity of the user or client. 
+
+-Hints-
+System.in is an input stream which is connected to keyboard input of programs.
+System.out is a PrintStream, it outputs the data you write to it to the console.
+	

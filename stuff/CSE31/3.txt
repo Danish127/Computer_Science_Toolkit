@@ -1,0 +1,10 @@
+Malloc:
+
+Many times in C or coding in general, you deal with large amounts of data and room becomes a problem.
+You don't want to waste any room so what Malloc does is that it allocates a certain amount of space for you so that you don't end up using 2MB on 2KB.
+
+Dynamic Memory Allocation:
+malloc registers data space.
+calloc allocates space for an array elements, initializes to zero and then returns a pointer to memory.
+free de-allocates the previous allocation.
+realloc changes the size of the previous allocation.

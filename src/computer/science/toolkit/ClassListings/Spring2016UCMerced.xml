@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classList>
+    <meta>
+        <school>UC Merced</school>
+        <semester>Spring 2016</semester>
+        <numberofclasses>7</numberofclasses>
+    </meta>
+    <class id='0' suggestions='7' name='CSE 020: Introduction to Computing I'>
+        <suggestion name='Lab 01'>
+           Rule one of java: NEVER FORGET YOUR SEMICOLON (;)
+           'print' and 'println': Learn to organize early. However organization will come second to it actually working properly.
+        </suggestion>
+		
+        <suggestion name='Lab 02'>
+            
+	Creating a class:
+
+	Example:
+		public class FirstProgram {
+                    public static void main(String[] args) {
+                        System.out.print ("Hugh Mungus");
+                    }
+		}
+
+	When creating a class, you must fist understand the structure before you become an architect.
+
+	An application is broken down into three main components
+		Class Definition
+                    Main method
+			Source Code
+
+		Class Definition is how you start creating a class.
+		A class definition needs two things. A modifier and a name.
+	
+		A modifier indicates the level of access your class will have with members of classes, such as variables. 
+		Their are 4 modifiers. Public, Protected, Private, and just blank.
+
+		Consider these modifiers like filters on what can be seen by other code in your application.
+		Public where every member can be seen and accessed by other code.
+			Laminas: This mean that any class can access your members.
+		Nothing at all: Its implicitly public.
+		Protected modifier specifies that the member can only be accessed within its own package and by a subclass of its class in another package.
+			Laminas: This mean that only classes in the parent class can access the member and classes outside cannot.  		
+		Private modifier specifies that the member can only be accessed in its own class.
+			Laminas: Only the class in which the member was created in can access this member, not even the parent class can access.
+		You will use these more when you get into inheritances.
+
+
+		A name gives your class an unique identity. Avoid redundant class names because the computer will become confused.
+		If you have two classes with the name Gregory, it will become confused on which Gregory you are calling. It's like having twins both named Janice. It causes difficulty and at time, civil rivalry for the attention of the parent. 
+		So in the example, "public class FirstProgram", public is the modifier indicating the level of access, and FirstProgram is the name of the class.
+
+		Main Method
+	
+		In every java application made, there must the component 
+		"public static void main(String[] args)".
+		This is where the computer will start the application, the computer will have no indication where to begin without it.
+
+		The Static is used mainly memory management. And can be implemented in class variable, class method, block, and nested classes.
+		Void indicates that there will be no return variable.
+		String[] args states that it will out put a string argument.
+
+
+		Source Code is everything within the brackets after the Class definition. Pretty much everything. This is what gets complied and this is where magic happens. Literally magic...or mips.  
+		For simplicites sake think of "System.out.print ("Hugh Mungus");" as the source code for this example."
+        </suggestion>
+		
+        <suggestion name='Lab 03'>
+            Input/Output Fundamentals:
+			
+			"Input is any information that is needed by your program to complete its execution."/n
+			"Output is any information that the program must convey to the user."/n
+			"Pay close attention to the arrangement of an user input, if a variable is called that required an user input, it will return an error or not run at all. "/n
+			"One cannot execute a argument if all its variable are undetermined and does not exist."/n
+			"When it comes to outputs, know what you want. Make sure appropriate parameters are assigned before executing program or you will run into a logical error in which the code works but not to the specificity of the user or client."/n
+
+			"-Hints-
+			System.in is an input stream which is connected to keyboard input of programs.
+			System.out is a print stream, it outputs the data you write to it to the console."/n
+	
+
+        </suggestion>
+        <suggestion name='Lab 04'>
+            "Data Types"
+
+			"Character: char"
+			"Integer: int, short, long, byte (variety of precisions)"
+			"Floating-point number: float, double, real, double precision"
+			"Boolean: true or false"
+
+			"Different data allows for specialize handling."
+			"Char allows users to create string variables like letters. (1 byte)"
+			"Int (4 byte), short (2 byte), long(8 byte), and byte (1 byte) has different precisions and handles  things like numerical values."
+			"Floating points basic use is to get more accurate numerical values requiring a decimal. Integer variables cannot output decimal values."
+			"Boolean is useful for statements that need to return a true or a false. '1' equates to true and '0' indicates a false for the argument."
+
+			"Creating a Variable:"
+			"Must declare a data type and give it a name. Can initialize the variable however do not need to."			"Initialization must follow data type convention."   
+
+        </suggestion>
+        <suggestion name='Lab 05'>
+            Casting.
+
+			"Greater than: >"
+			"Less than: &lt;"
+			"Equal: =="
+			"Not equal: !="
+			"Greater than or equal to: >="
+			"Less than or equal to &lt;="
+			"AND: &amp;&amp;"
+			"OR: ||"
+			
+			"Boolean Arguments:
+			They are like true and false and are useful for conditional arguments."
+			
+        </suggestion>
+        <suggestion name='Lab 06'>
+            Lab 3 
+
+		"Lab 6"
+
+		"If and If Else"
+		"An If statement creates an argument in which a condition must be met before an execution is done."
+		"Example:"
+		if (a &lt; b){
+		System.out.print("Hugh Mungus");
+		}
+		
+		-If a is less than b, then it will print out the statment Hugh Mungus.
+		An If else is used after an if statement, creating another argument after the failure or success of the previous If statement
+		Example:
+		int a = 4;
+		int b = 3;
+		
+		
+		if (a &lt; b){
+		System.out.print("Hugh Mungus");
+		}
+	
+		if else (b &lt; a){
+		System.out.print("Slagathor");
+		}
+		- A is more than b so the first if statement fails but the "if else" returns true so it prints the string "Slagathor"."
+
+        </suggestion>
+        <suggestion name='Bobcar'>
+            "Start what knowing what you need to display and find all varibles that the user is responsible for."
+			"Follow conditions and remember to control the flow of your code."
+			"Remember the differance between a int and a double and if statements are your best friends."
+        </suggestion>
+    </class>
+    <class id='0' suggestions='6' name='CSE 021: Introduction to Computing II'>
+        <suggestion name='Lab 01'>
+           Lab1
+
+			For Loop:
+			A continuous and reiderating source code that cycles infinitly until it fulfill tha set conditions.
+			There are three parts to a for loop.
+			initialization, termination,incrementation.
+
+			Initialization is where you create a varible unique to that for loop.
+			Termination is the conition that will allow the for loop to stop once the temination condition is met.
+			Incrementation is after the first loop ends, there is a incrementation factor that increase the inzilization varible.
+	
+			Example:
+			for( int i = 0, i &lt; 4, i++)
+				System.out.print("John Laurnes");
+			As along as i &lt; 4, it will keep printing out John Laurens. However the incrementation factor increase teh inzilization varible by ++ or by one.  
+
+			Array:
+			An array is a container object that holds a fixed number of values of a single type. 
+        </suggestion>
+		<suggestion name='Lab 02'>
+			Understanding BBall.
+
+			There are many varibles to coding and many of the time you will be give a source code that can range from 100 lines to 10000 lines.
+			Examine your code line by line and how it interacts with the application. The smallest detail can make or break you code.
+		</suggestion>
+		<suggestion name='Lab 03'>
+			AND and OR
+
+			When &amp;&amp;(AND) is placed in an arguments in which a two condition needs to be compared to one another. In which case they both have to return true.
+			Example:
+				if (a &lt; b &amp;&amp; b > c){
+					System.out.print("Riga mortis");
+				}
+			A must by less than b and b must be less than c in order for this to exicute.
+			If one returns trues but the other returns false, it will than be come a false.
+			When OR (||) is places in an argument with two conditions, one or the other returns true for the statment to return true.
+			Example:
+				if (a &lt; b || b > c){
+					System.out.print("Riga mortis");
+				}
+			If either one returns true then it prints, if both returns false than it does not print. 
+		</suggestion>
+		<suggestion name='Lab 04'>
+			Overloading
+
+			Overloading happens when variables are put into arrays or intergers when there is no room to be found.
+			I cannot try to in put 100 different varaibles into an array set to 20. 
+		</suggestion>
+		<suggestion name='Lab 05'>
+			Method Overloading: a class have multiple methods by same name but different parameters.
+
+Example: 
+	class calculation{
+	sum(int a, int b);
+	sum(int c);
+	}
+	
+	...
+	calculation j = new calculation();
+	j.sum(1,1);
+	j.sum(1);
+
+In the first j.sum, it inizalizes 2 varaibles and so it will go to the first sum because it fits the parameters of two int varibles. 
+The second j.sum will inizalize the second sum because it's parameters are just one integer. 
+		</suggestion>
+		<suggestion name='Lab 06'>
+		Set and Get:
+A pattern of data encapsulation. 
+Instead of accessing class member variables directly, you define get methods to access these variables, and set methods to modify them. 
+
+Accessors and Mutators:
+Fancier words for getters and setters.
+		</suggestion
+    </class>
+    <class id='0' suggestions='3' name='CSE 030: Introduction to Computer Science and Engineering I'>
+        <suggestion name='Lab 01'>
+		Java to C++
+
+They share many similar functions but C++ does things better than java. 
+While java specilizes in object-oriented programming, C++ is more well equiped for multiple inheritance.
+While comes in handy for things such as looking at repeating patterns.
+
+using terminal is an esential part of CSE so get use to useing:
+g++ &lt;source> -o &lt;executable>
+		</suggestion>
+		<suggestion name='Lab 02'>
+		Array
+
+The major advantage for using C++ is that it good with arrays in that it can find patterns.
+When trying to find patterns, be sure to include multiple variables keep track of previous varaibles.
+The convention is i and j but its up to you.
+
+2D Arrays are simpley a matrix of numbers and are not more difficult than normal arrays. Tackle them with the same assurance you would with normal arrays.
+		</suggestion>
+		<suggestion name='Lab 03'>
+		Sorting and Searching
+
+Sorting: Make sure you have a varaible that give you insight on your previous varaibles. 
+Compare and constrast, and replace the varaibles with one another to get whatever sorting you need.
+
+Searching: Going through the array to see patterns.
+		</suggestion>
+		
+    </class>
+    <class id='0' suggestions='4' name='CSE 031: Introduction to Computer Science and Engineering II'>
+        <suggestion name='Lab 01'>
+		The main difference that comes to C and C++ an even java is that they have their own unique library of functions and each are better than the other in certain ways.
+Understand that debugging is necessary for C because many times, the initial program will over look many errors because of how the structure of the code works.
+gcc will become your best friend and help you lead into the world of terminal as we go deeper into the depths of CSE.
+
+		</suggestion>
+		<suggestion name='Lab 02'>
+		Pointers:
+
+A pointer is a variable which contains the address in memory of another variable. 
+We can have a pointer to any variable type.
+
+However pointers are one of the most difficult and widely confusing parts of C because of their nature.
+The idea of a pointer to a pointer stops a lot of people in their track.
+But remember that pointers are almost regular referring and being used in terms of an Array.
+
+		</suggestion>
+		<suggestion name='Lab 03'>
+		Malloc:
+
+Many times in C or coding in general, you deal with large amounts of data and room becomes a problem.
+You don't want to waste any room so what Malloc does is that it allocates a certain amount of space for you so that you don't end up using 2MB on 2KB.
+
+Dynamic Memory Allocation:
+malloc registers data space.
+calloc allocates space for an array elements, initializes to zero and then returns a pointer to memory.
+free de-allocates the previous allocation.
+realloc changes the size of the previous allocation.
+
+		</suggestion>
+		<suggestion name='Lab 05'>
+		MIPS is a fundamental part of C and coding in general because it is literally the last layer before binary.
+MIPS is an assembly language that follows very strict restrictions however all these restrictions make up every single code ever conceived.
+
+Format:
+There are three formats R, I, J.
+
+R: opcode, rs, rt, rd, shamt, funct.
+I: opcode, rs, rt, immediate
+J: opcode, address
+
+Opcode, indicates what operations is needed and is called.
+rs, indicates the first variable or values
+rt, represent the second.
+rd, represent where the answer of the two goes, most of the time.
+shamt, the amount that needs to be shifted
+funct, what function is being called.
+
+		</suggestion>
+    </class>
+    <class id='0' suggestions='0' name='CSE 100: Algorithm Design and Analysis'>
+        
+    </class>
+    <class id='0' suggestions='0' name='CSE 111: Database Systems'>
+        
+    </class>
+    <class id='0' suggestions='0' name='CSE 015: Discrete Mathematics'>
+        
+    </class>
+</classList>

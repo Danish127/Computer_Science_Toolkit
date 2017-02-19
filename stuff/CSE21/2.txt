@@ -1,0 +1,4 @@
+Understanding BBall.
+
+There are many varibles to coding and many of the time you will be give a source code that can range from 100 lines to 10000 lines.
+Examine your code line by line and how it interacts with the application. The smallest detail can make or break you code.

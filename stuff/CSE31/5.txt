@@ -1,0 +1,16 @@
+MIPS is a fundamental part of C and coding in general because it is literally the last layer before binary.
+MIPS is an assembly language that follows very strict restrictions however all these restrictions make up every single code ever conceived.
+
+Format:
+There are three formats R, I, J.
+
+R: opcode, rs, rt, rd, shamt, funct.
+I: opcode, rs, rt, immediate
+J: opcode, address
+
+Opcode, indicates what operations is needed and is called.
+rs, indicates the first variable or values
+rt, represent the second.
+rd, represent where the answer of the two goes, most of the time.
+shamt, the amount that needs to be shifted
+funct, what function is being called.

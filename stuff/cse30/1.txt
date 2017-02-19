@@ -1,0 +1,8 @@
+Java to C++
+
+They share many similar functions but C++ does things better than java. 
+While java specilizedes in object-oriented programming, C++ is more well equiped for multiple inheritance.
+While comes in handy for things such as looking at repeating patterns.
+
+using terminal is an esential part of CSE so get use to useing:
+g++ <source> -o <executable>

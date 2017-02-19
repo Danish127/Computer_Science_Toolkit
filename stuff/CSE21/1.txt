@@ -1,0 +1,18 @@
+Lab1
+
+For Loop:
+A continuous and reiderating source code that cycles infinitly until it fulfill tha set conditions.
+There are three parts to a for loop.
+initialization, termination,incrementation.
+
+initialization is where you create a varible unique to that for loop.
+Termination is the conition that will allow the for loop to stop once the temination condition is met.
+Incrementation is after the first loop ends, there is a incrementation factor that increase the inzilization varible.
+	
+	Example:
+		for( int i = 0, i < 4, i++)
+			System.out.print("John Laurnes");
+		As along as i < 4, it will keep printing out John Laurens. However the incrementation factor increase teh inzilization varible by ++ or by one.  
+
+Array:
+An array is a container object that holds a fixed number of values of a single type. 

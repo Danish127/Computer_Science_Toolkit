@@ -1,0 +1,57 @@
+LAB 1
+"Everything between \" "\ indicates a string "/n
+
+LAB 2
+
+Creating a class:
+
+Example:
+public class FirstProgram {
+	public static void main(String[] args) {
+		System.out.print ("Hugh Mungus");
+	}
+}
+
+
+When creating a class, you must fist understand the structure before you become an architech.
+
+An application is broken down into three main components
+	Class Definition
+	Main method
+	Source Code
+
+Class Definition is how you start creating a class.
+A class defition needs two things. A modifer and a name.
+	
+	A modifer indicates the level of access your class will have with members of classes, such as varibles. 
+	Their are 4 modifiers. Public, Protected, Private, and just blank.
+
+		Consider these modifiers like filters on what can be seen by other code in your application.
+		Public where every membrt can be seen and accessed by other code.
+			Lamines: This mean that any class can access your members.
+		Nothing at all: Its implicitley public.
+		Protected modifier specifies that the member can only be accessed within its own package and by a subclass of its class in another package.
+			Lamines: This mean that only classes in the parent class can access the member and classes outside can not.  		
+		Private modifier specifies that the member can only be accessed in its own class.
+			Lamines: Only the class in which the member was created in can access this member, not even the parent class can access.
+		You will use these more when you get into inheritances.
+
+
+	A name gives your class an unique identity. Aviod redundent class names becuase the computer will become confused.
+	If you have two classes with the name Gregory, it will become confused on which Gregory you are calling. It's like having twins both named Janice. It causes diffuclty and at time, civil rivalry for the attention of the parent. 
+	So in the example, "public class FirstProgram", public is the modifier indicating the level of access, and FirstProgram is the name of the class.
+
+Main Method
+	
+	In every java application made, there must the component 
+	"public static void main(String[] args)".
+	This is where the computer will start the application, the computer will have no indication where to begin without it.
+
+	The Static is used mainly memory managment. And can be implimented in class varible, class method, block, and nested classes.
+	Void indicates that there will be no return variable.
+	String[] args states that it will out put a string argument.
+
+
+Source Code is everything within the brackets after the Class defition. Pretty much everyhting. This is what gets complied and this is where magic happens. Literally magic...or mips.  
+For simplicites sake think of "System.out.print ("Hugh Mungus");" as the soruce code for this example.
+

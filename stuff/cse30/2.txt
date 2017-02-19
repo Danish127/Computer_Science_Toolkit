@@ -1,0 +1,7 @@
+Array
+
+The major advantage for using C++ is that it good with arrays in that it can find patterns.
+When trying to find patterns, be sure to include multiple variables keep track of previous varaibles.
+The convention is i and j but its up to you.
+
+2D Arrays are simpley a matrix of numbers and are not more difficult than normal arrays. Tackle them with the same assurance you would with normal arrays.

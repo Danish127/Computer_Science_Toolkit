@@ -1,0 +1,3 @@
+The main difference that comes to C and C++ an even java is that they have their own unique library of functions and each are better than the other in certain ways.
+Understand that debugging is necessary for C because many times, the initial program will over look many errors because of how the structure of the code works.
+gcc will become your best friend and help you lead into the world of terminal as we go deeper into the depths of CSE.

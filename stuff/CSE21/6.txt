@@ -1,0 +1,6 @@
+Set and Get:
+A pattern of data encapsulation. 
+Instead of accessing class member variables directly, you define get methods to access these variables, and set methods to modify them. 
+
+Accessors and Mutators:
+Fancier words for getters and setters.

@@ -1,0 +1,6 @@
+Sorting and Searching
+
+Sorting: Make sure you have a varaible that give you insight on your previous varaibles. 
+Compare and constrast, and replace the varaibles with one another to get whatever sorting you need.
+
+Searching: Going through the array to see patterns.

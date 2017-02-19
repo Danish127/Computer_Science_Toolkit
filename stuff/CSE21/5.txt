@@ -1,0 +1,15 @@
+Method Overloading: a class have multiple methods by same name but different parameters.
+
+Example: 
+	class calculation{
+	sum(int a, int b);
+	sum(int c);
+	}
+	
+	...
+	calculation j = new calculation();
+	j.sum(1,1);
+	j.sum(1);
+
+In the first j.sum, it inizalizes 2 varaibles and so it will go to the first sum because it fits the parameters of two int varibles. 
+The second j.sum will inizalize the second sum because it's parameters are just one integer. 

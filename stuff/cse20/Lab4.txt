@@ -1,0 +1,19 @@
+Lab 4 
+
+Data Types
+
+Character: char
+Integer: int, short, long, byte (variety of precisions)
+Floating-point number: float, double, real, double precision
+Boolean: true or false
+
+Different data allows for specilize handling. 
+Char allows users to create string varibles like letters. (1 byte)
+Int (4 byte), short (2 byte), long(8 byte), and byte (1 byte) has different percisions and handels  things like numberiacl vaules.
+Floating points basic use is to get more accurate numberical vaules requiring a decimal. Integer varaibles can not output decimal vaules. 
+Boolean is useful for statements that needs to return a true or a false. '1' equates to true and '0' indicates a false for the arguement.
+
+Creating a Varible:
+
+Must declare a data type and give it a name. Can initialize the variable however do not need to.
+Initialization must follow data type convention.   
