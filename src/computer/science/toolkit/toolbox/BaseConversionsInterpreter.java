@@ -7,13 +7,15 @@ package computer.science.toolkit.toolbox;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class BaseConversionsInterpreter {
     private String input;
     private int ibase;
     private int obase;
     private String output;
+    
+    //String value of input, int of input base, int of output base
     public BaseConversionsInterpreter(String input, int ibase, int obase){
         this.ibase = ibase;
         this.input = cleanse(input);
@@ -24,6 +26,7 @@ public class BaseConversionsInterpreter {
         
     }
     
+    //Sanitize string input
     public String cleanse(String toclean){
         String notscrub = "[^";
         for(int i = 0; i < this.ibase; i++){
@@ -32,7 +35,7 @@ public class BaseConversionsInterpreter {
         return toclean.replaceAll(notscrub + "]", "");
     }
     
-    
+    //Converts existing object value
     public String convert(){
         String output = "";
         if(ibase > obase){
@@ -71,6 +74,7 @@ public class BaseConversionsInterpreter {
         return output;
     }
     
+    //First converts value to base 10
     private int makeBase10(String input, int ibase){
         int output = 0;
         if(ibase < 10){
@@ -88,6 +92,7 @@ public class BaseConversionsInterpreter {
         return output;
     }
     
+    //Supports up to Base 36
     private int hotswapCharToInt(String chad){
         switch(chad){
             case "0":
@@ -167,6 +172,7 @@ public class BaseConversionsInterpreter {
         }
     }
     
+    //Converts the int to its char representation
     private String hotswapIntToChar(int chad){
         switch(chad){
             case 0:
@@ -246,6 +252,7 @@ public class BaseConversionsInterpreter {
         }
     }
     
+    //basic get/sets
     public String getInput(){
         return this.input;
     }

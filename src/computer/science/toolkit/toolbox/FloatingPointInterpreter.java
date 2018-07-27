@@ -7,7 +7,7 @@ package computer.science.toolkit.toolbox;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class FloatingPointInterpreter {
     BinaryInterpreter BinIn;
@@ -18,6 +18,7 @@ public class FloatingPointInterpreter {
     private int significand;
     private int bin[];
     
+    //Represent floating points as their numeric representation
     public FloatingPointInterpreter(String binary){
         BinIn = new BinaryInterpreter(binary);
         if(BinIn.getLength() == 32){
@@ -55,6 +56,7 @@ public class FloatingPointInterpreter {
         
     }
     
+    //Shows string of value
     public String singleLineView(){
         String out = null;
         if(this.signS.equals("1")){

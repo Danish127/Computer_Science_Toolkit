@@ -25,7 +25,7 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class ComputerScienceToolKit {
 
@@ -40,6 +40,7 @@ public class ComputerScienceToolKit {
         //if(true){
             
             try {
+                //make it so file can be loaded later
                 File classlist = new File("ClassListings\\Spring2016UCMerced.xml");
                 DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
                 DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

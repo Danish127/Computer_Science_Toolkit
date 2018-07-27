@@ -24,6 +24,7 @@ public class BinarytoMIPSInterpreter {
     private String immediate;
     private String address;
 
+    //Intilize binary string
     public BinarytoMIPSInterpreter(String binary) {
         this.binary = binary;
         this.opcode = binary.substring(0, 5);
@@ -33,6 +34,7 @@ public class BinarytoMIPSInterpreter {
         this.name = getFunction(opcode);
     }
 
+    //Break down the instruction
     public String deriveMnemonic(String opcode, String funct) {
         String tmp = "";
         switch (opcode) {
@@ -66,7 +68,10 @@ public class BinarytoMIPSInterpreter {
             case "000011":
                 tmp = "jal";
                 break;
-           /* case "001000":
+           /* 
+                
+            Cut for time    
+            case "001000":
                 tmp = "jr";
                 break;
             case "100000":
@@ -230,13 +235,14 @@ public class BinarytoMIPSInterpreter {
                 break;*/
 
             default:
-                tmp = "Bruv, what the fuck?";
+                tmp = "Unknown or unimplemented command";
                 break;
 
         }
         return tmp;
     }
 
+    //derive the function from the opcode CUT FOR TIME
     public String getFunction(String opcode) {
         String tmp = "";
         switch (opcode) {
@@ -245,6 +251,7 @@ public class BinarytoMIPSInterpreter {
         return tmp;
     }
 
+    //Gets/Sets
     public String getBinary() {
         return this.binary;
     }

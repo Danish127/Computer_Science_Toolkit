@@ -10,7 +10,7 @@ import computer.science.toolkit.toolbox.BaseConversionsInterpreter;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class BaseConversionsInterpreterWindow extends javax.swing.JFrame {
 

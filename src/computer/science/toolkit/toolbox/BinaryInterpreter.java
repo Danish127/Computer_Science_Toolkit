@@ -7,7 +7,7 @@ package computer.science.toolkit.toolbox;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class BinaryInterpreter {
     private String binary;
@@ -19,7 +19,7 @@ public class BinaryInterpreter {
     private String twosCompliment = null;
     private String bias = null;
     
-    
+    //Initialize binary string
     public BinaryInterpreter(String binary){
         binary = cleanse(binary);
         this.binary = binary;
@@ -38,11 +38,12 @@ public class BinaryInterpreter {
         
     }
     
+    //Convert to unsigned
     public String unsignedConvert(){
         if(this.unsigned != null){
             return this.unsigned;
         }
-        int unsignedI = 0;//algebra for n(n) * 2^(n-1) + ... + n(0) * 2^0
+        long unsignedI = 0;//algebra for n(n) * 2^(n-1) + ... + n(0) * 2^0
         for (int i = 0; i < length; i++) {
             //System.out.println(unsigned);
             unsignedI += Math.pow((double) 2, (double) (length - 1 - i)) * bArray[i];
@@ -52,11 +53,12 @@ public class BinaryInterpreter {
         return out;
     }
     
+    //Convert to signed
     public String signedConvert(){
         if(this.signed != null){
             return this.signed;
         }
-        int signedI = 0;
+        long signedI = 0;
         String out = null;
         if (bArray[0] == 0) {
             for (int i = 0; i < this.length; i++) {
@@ -70,12 +72,17 @@ public class BinaryInterpreter {
                 signedI += Math.pow((double) 2, (double) (length - 1 - i)) * bArray[i];
             }
             signedI *= -1;
-            out = "-" + signedI;
+            if(signedI == 0){
+                out = "-" + signedI;
+            }else{
+                out = "" + signedI;
+            }
         }
         this.signed = out;
         return out;
     }
     
+    //Convert to one's compliment
     public String onesComplimentConvert(){
         if(this.onesCompliment != null){
             return this.onesCompliment;
@@ -107,6 +114,7 @@ public class BinaryInterpreter {
         return out;
     }
     
+    //Convert to two's compliment
     public String twosComplimentConvert(){
         if(this.twosCompliment != null){
             return this.twosCompliment;
@@ -127,6 +135,7 @@ public class BinaryInterpreter {
         return out;
     }
     
+    //Convert to bias
     public String biasConvert(){
         if(this.bias != null){
             return this.bias;
@@ -144,16 +153,19 @@ public class BinaryInterpreter {
         return out;
     }
     
+    //Sanitize given string
     public static String cleanse(String binary){
         //0x
         //System.out.println(binary.replaceAll("[^01]", ""));
         return binary.replaceAll("[^01]", "");
     }
     
+    //Sanitize this object
     public void cleanse(){
         this.binary = binary.replaceAll("[^01]", "");
     }
     
+    //Gets/sets
     public void setBinary(String binary){
         binary = cleanse(binary);
         this.binary = binary;

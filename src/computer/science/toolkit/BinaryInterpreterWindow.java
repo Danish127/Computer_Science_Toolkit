@@ -11,7 +11,7 @@ import computer.science.toolkit.toolbox.BinaryInterpreter;
 
 /**
  *
- * @author dbm3
+ * @author daniel
  */
 public class BinaryInterpreterWindow extends javax.swing.JFrame {
 

@@ -7,7 +7,7 @@ package computer.science.toolkit.toolbox;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class MIPStoBinaryInterpreter {
     private BinaryInterpreter BinIn;
@@ -23,7 +23,7 @@ public class MIPStoBinaryInterpreter {
     private String address;
     private String[][] name = new String[32][2];
     
-    
+    //Convert single mips instruction to binary CUT FOR TIME
     MIPStoBinaryInterpreter(String binary){
         BinIn = new BinaryInterpreter(binary);
         this.binary = BinIn.getBinary();

@@ -7,7 +7,7 @@ package computer.science.toolkit;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class Class {
     private String name;

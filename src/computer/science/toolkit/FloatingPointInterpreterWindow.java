@@ -9,7 +9,7 @@ import computer.science.toolkit.toolbox.FloatingPointInterpreter;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class FloatingPointInterpreterWindow extends javax.swing.JFrame {
 

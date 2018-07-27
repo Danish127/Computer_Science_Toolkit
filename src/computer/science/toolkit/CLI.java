@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author MLH-Admin
+ * @author daniel
  */
 public class CLI {
     public void Run(){
